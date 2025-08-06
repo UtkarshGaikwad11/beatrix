@@ -26,7 +26,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="d-none d-md-flex" id="">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Home</a>
@@ -73,6 +73,52 @@
             </div>
         </div>
     </nav>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item" style="padding-right: 15px;">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 15px;">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 15px;">
+                        <a class="nav-link" href="#">Fashion</a>
+                    </li>
+                    <li class="nav-item" style="padding-right: 15px;">
+                        <a class="nav-link" href="#">Lifestyle</a>
+                    </li>
+                    <li class="nav-item dropdown" style="padding-right: 15px;">
+                        <a class="nav-link" href="#">Pages</a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="#" style=" border-top: 1px solid #3cffd0;">Category
+                                    Page</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Page</a></li>
+                            <li><a class="dropdown-item" href="#">Post Single</a></li>
+                            <li><a class="dropdown-item" href="#">Post Video</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Page</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" style="padding-right: 15px;">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="navbar-nav d-none d-md-flex">
+                    <button class="btn nav-search ">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn theme-toggle me-2" id="themeToggle">
+                        <i class="fas fa-moon" id="themeIcon"></i>
+                    </button>
+                    <button class="btn btn-subscribe me-2">
+                        <i class="fas fa-play me-2"></i>Subscribe
+                    </button>
+                    <span class=" ms-3 nav-bar" style="cursor: pointer;">
+                        <i class="fas fa-bars"></i>
+                    </span>
+                </div>
+            </div>
 
     <div id="rightSideMenu" class="right-side-menu ">
         <div class="menu-header d-flex justify-content-between align-items-center " style="margin-bottom: 35px;">
@@ -156,155 +202,100 @@
     <!-- Main Section -->
     <div class="container mt-5">
         <div class="row">
+            <div>
+                <ul class="breadcrumb-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li><span>Politics</span></li>
+                </ul>
+            </div>
+
+            <!-- Category Title -->
+            <h2 class="category-title " style="margin-bottom: 50px;">Category : Politics</h2>
             <!-- Left Column (Main Content) -->
             <div class="col-lg-8">
-                <p class="text-uppercase  fw-semibold" style="color: #cacaca;">Politics</p>
-                <h1 class="news-title">Georgia’s voting law will make elections easier than ever</h1>
-                <div class="news-title-para">
-                    <p>Tuesday’s primary is the first big test of the legislation, which was
-                        opposed by voting rights groups
-                        and Democrats.</p>
-                </div>
-                <div class="d-md-flex justify-content-between align-items-center my-3">
-                    <!-- Left: Author + Date -->
-                    <div class="meta">
 
-                        <span>BY <span class="author">KRISTIN</span> </span>
-                        <span class="date">JANUARY 31, 2023</span>
-                    </div>
 
-                    <!-- Right: Social Icons -->
-                    <div class="circle-icon social-icons">
-                        <i class="fab fa-facebook-f me-2"></i>
-                        <i class="fab fa-twitter me-2"></i>
-                        <i class="fab fa-instagram me-2"></i>
-                        <i class="fab fa-linkedin-in"></i>
-                    </div>
-                </div>
+                <!-- Featured Article -->
+                <div class="card mb-4 border-0 ">
+                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/laptop.jpg"
+                        alt="Featured" class="article-image">
 
-                <div class="theme-blog-details">
-                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/red-woman.webp"
-                        class="img-fluid my-3" alt="News Image">
-
-                    <p style="margin-top: 20px;">Tuesday’s primary is the first big test of the legislation, which was
-                        opposed by voting rights groups and Democrats. Struggling to sell one multi-million dollar home
-                        currently on the market won’t stop actress and singer Jennifer Lopez from expanding her property
-                        collection. Lopez has reportedly added to her real estate holdings an eight-plus acre estate in
-                        Bel-Air anchored by a multi-level mansion.</p>
-
-                    <p>The property, complete with a 30-seat screening room, a 100-seat amphitheater and a swimming pond
-                        with sandy beach and outdoor shower, was asking about $40 million, but J. Lo managed to make it
-                        hers for $28 million. As the Bronx native acquires a new home in California, she is trying to
-                        sell a gated compound.</p>
-
-                    <p>Black farmers in the US’s South— faced with continued failure their efforts to run successful
-                        farms their launched a lawsuit claiming that “white racism” is to blame for their inability to
-                        the produce crop yields and on equivalent to that switched seeds.</p>
-
-                    <div class="quote-box mt-4">
-                        <p>
-                            “Most of us felt like we could trust each other to be quarantined together, so we didn’t
-                            need to wear masks or stay far apart”
+                    <div class="card-body">
+                        <h3 class="article-title">Five Signs of a Highly Intelligent Person</h3>
+                        <p class="article-desc">
+                            Struggling to sell one multi-million dollar home currently on the market won’t stop actress
+                            and singer Jennifer Lopez from expanding
                         </p>
-                    </div>
-
-                    <p>France’s repeat of the 2017 runoff confirms Macron’s and Le Pen’s own political analysis: That
-                        the divide between the left and the right is no longer relevant in France and has been replaced
-                        by an opposition between a mainstream bloc that is pro-European and open to the outside world on
-                        one side, and nationalists on the other.</p>
-
-                    <p>Both candidates scored higher than five years ago, leaving the traditional right and left in an
-                        even more shambolic state than before. Macron went from 24 percent in 2017 in the first round to
-                        27.6 percent Sunday and Le Pen went from 21.3 percent to 23.4 percent.</p>
-
-                    <p>The gap between them is higher than last time around, showing that Macron has managed to drum up
-                        the most votes despite controversies in the campaign’s last mile, including over the state’s
-                        overuse of consulting firms. But the far-right bloc — Marine Le Pen, Eric Zemmour and
-                        nationalist Nicolas Dupont-Aignan combined — garnered than 30 percent of the total vote.</p>
-
-                    <div class="fig-caption">
-                        <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:1024/h:683/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/neon.jpg"
-                            class="img-fluid ">
-                        <p>The greate wall of china. This illustration is purchase form an marketplace.</p>
-                    </div>
-
-                    <h2 class="theme-blog-heading">What Will Be The Next Step to Complete?</h2>
-                    <p>The “new ’20s” idea might not work—there were a lot more young people in the United States then
-                        than now; a reprise of the world-changing inventions and discoveries of the 1920s would be a big
-                        surprise to those economists who believe that we have been in an invention dry spell since the
-                        1970s. In his Businessweek piece, Peter Coy largely agrees, writing, “In all probability … the
-                        U.S. will continue to wrestle with ‘secular</p>
-
-                    <p>These experts make strong cases, and they satisfy my natural instinct not to go there. But I
-                        remain very interested in the reasons the ’20s appeal to our imagination right now. Of course,
-                        it’s the booze, the sex, and the parties. But it’s also a decade with a very strong identity—and
-                        I think that helps. Writing in the journal American Speech in 1951, Mamie J. Meredith argued
-                        that the ’20s boasted</p>
-
-                    <h2 class="theme-blog-heading">Apple Design Award Winners: Apps</h2>
-                    <ul>
-                        <li>Parents Are Fed Up With Their Kids’ Expensive Berry Habits</li>
-                        <li>15 Mother’s Day Gifts for the Burned-Out Mom in Your Life</li>
-                        <li>Really Though, What Jeans Are in Style Now?</li>
-                        <li>Don’t Fall for Fertility Fearmongering About Trans Men</li>
-                    </ul>
-
-                    <p>Zemmour, a 63-year-old TV pundit-turned-politician, was once tipped to come second behind Macron,
-                        back in October. But he plummeted spectacularly in the polls after suffering from a perceived
-                        lack of credibility as the Ukraine war started and former comments praising Russian President
-                        Vladimir Putin resurfaced. He scored a measly 7 percent. Despite their bitter and unrelenting
-                        fighting throughout the campaign, he swiftly endorsed Marine Le Pen.</p>
-
-                    <p>I have disagreements with Marine Le Pen,” Zemmour said at his concession speech Sunday, “but
-                        there is a man facing Marine Le Pen who has let in 2 million immigrants … who would therefore do
-                        worse if he were reelected — it is for this reason that I call on my voters to vote for Marine
-                        Le Pen.</p>
-                </div>
-
-                <!-- Reply Section -->
-                <!-- Tags Section -->
-                <div class="post-footer mb-5">
-                    <h5 class="mb-3">Tags:</h5>
-                    <button class="tag-btn">Elegant</button>
-                    <button class="tag-btn">Latest</button>
-                    <button class="tag-btn">Modern</button>
-                </div>
-
-                <!-- Author Section -->
-                <div class="author-section">
-                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:200/h:200/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/wphb-cache/gravatar/4ba/4baf8d27f33c75151b378befcd1ca61fx200.jpg"
-                        alt="Author Image">
-                    <div class="author-info">
-                        <h6>About Author</h6>
-                        <h5>Kristin</h5>
-                        <p>My favorite compliment is being told that I look like my mom. Seeing myself in her image,
-                            like this daughter up top, makes me so proud of how far I’ve come.</p>
-                        <div class="social-icons">
-                            <i class="fab fa-facebook-f"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-pinterest-p"></i>
+                        <div class="article-meta">
+                            <span>BY <span class="author">KRISTIN</span> </span>
+                            <span class="date">JANUARY 31, 2023</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Comment Section -->
-                <div class="comment-section">
-                    <h4>Leave a Reply</h4>
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <input type="text" class="form-control" placeholder="Enter Name">
-                            </div>
-                            <div class="col-md-6">
-                                <input type="email" class="form-control" placeholder="Enter Email">
-                            </div>
+                 <div class="card mb-4 border-0 ">
+                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/laughter-in-the-sun-scaled.webp"
+                        alt="Featured" class="article-image">
+
+                    <div class="card-body">
+                        <h3 class="article-title">Maddie Ziegler Takes a Lie Detector Test</h3>
+                        <p class="article-desc">
+                           Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez from expanding
+                        </p>
+                        <div class="article-meta">
+                            <span>BY <span class="author">KRISTIN</span> </span>
+                            <span class="date">JANUARY 31, 2023</span>
                         </div>
-                        <input type="text" class="form-control" placeholder="Enter Website">
-                        <textarea rows="8" cols="45" class="form-control custom-textarea"
-                            placeholder="Enter Comments"></textarea>
-                        <button type="submit" class="btn btn-submit mt-2">Post Comment</button>
-                    </form>
+                    </div>
+                </div>
+
+                 <div class="card mb-4 border-0 ">
+                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/model-glass.jpg"
+                        alt="Featured" class="article-image">
+
+                    <div class="card-body">
+                        <h3 class="article-title">Education vs. Fuel: a lose-lose situation</h3>
+                        <p class="article-desc">
+                          Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez from expanding
+                        </p>
+                        <div class="article-meta">
+                            <span>BY <span class="author">KRISTIN</span> </span>
+                            <span class="date">JANUARY 31, 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4 border-0 ">
+                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/camera-pose-scaled.webp"
+                        alt="Featured" class="article-image">
+
+                    <div class="card-body">
+                        <h3 class="article-title">Rachel Maddow Will Go Mondays Only On MSNBC</h3>
+                        <p class="article-desc">
+                          Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez from expanding
+                        </p>
+                        <div class="article-meta">
+                            <span>BY <span class="author">KRISTIN</span> </span>
+                            <span class="date">JANUARY 31, 2023</span>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="card mb-4 border-0 ">
+                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/office.webp"
+                        alt="Featured" class="article-image">
+
+                    <div class="card-body">
+                        <h3 class="article-title">Introduction of Design Trends</h3>
+                        <p class="article-desc">
+                          Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez from expanding
+                        </p>
+                        <div class="article-meta">
+                            <span>BY <span class="author">KRISTIN</span> </span>
+                            <span class="date">JANUARY 31, 2023</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -376,52 +367,7 @@
         </div>
 
 
-        <!-- Related Posts -->
-        <div class="py-5">
-            <h2 class="section-title" style="margin-top: 70px;">Related Posts</h2>
-            <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-md-4 post">
-                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/yellow-diva.jpg"
-                        alt="" style="height: 244px;">
-                    <div class="section-title post-title">Corporations Are People, Too</div>
-                    <div class="post-desc">Struggling to sell one multi-million dollar home currently on the market
-                    </div>
-                    <div class="meta">
 
-                        <span>BY <span class="author">KRISTIN</span> </span>
-                        <span class="date">JANUARY 31, 2023</span>
-                    </div>
-                </div>
-                <!-- Card 2 -->
-                <div class="col-md-4 post">
-                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/sky-hat.jpg"
-                        alt="" style="height: 244px;">
-                    <div class="section-title post-title">Five signs of a healthy intelligent person</div>
-                    <div class="post-desc">Struggling to sell one multi-million dollar home currently on the market
-                    </div>
-                    <div class="meta">
-
-                        <span>BY <span class="author">KRISTIN</span> </span>
-                        <span class="date">JANUARY 31, 2023</span>
-                    </div>
-                </div>
-                <!-- Card 3 -->
-                <div class="col-md-4 post">
-                    <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/protest.jpg"
-                        alt="" style="height: 244px;">
-                    <div class=" section-title post-title">London wants to have its brexitcake and eat it too</div>
-                    <div class="post-desc">Struggling to sell one multi-million dollar home currently on the market
-                    </div>
-                    <div class="meta">
-
-                        <span>BY <span class="author">KRISTIN</span> </span>
-                        <span class="date">JANUARY 31, 2023</span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
 
     </div>
 
@@ -495,24 +441,24 @@
             </div>
 
             <!-- Bottom Bar -->
-            <div class="row bottom-bar text-center text-md-start align-items-center">
-                <div class="col-12 col-md-6 mb-2 mb-md-0">
-                    <div>Copyright © Beatrix 2023. All rights reserved</div>
-                </div>
-                <div class="col-12 col-md-6 text-center text-md-end bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <!-- <span class="back-to-top ms-3" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+        <div class="row bottom-bar text-center text-md-start align-items-center">
+  <div class="col-12 col-md-6 mb-2 mb-md-0">
+    <div>Copyright © Beatrix 2023. All rights reserved</div>
+  </div>
+  <div class="col-12 col-md-6 text-center text-md-end bottom-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Use</a>
+    <!-- <span class="back-to-top ms-3" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
       <i class="fa-solid fa-chevron-up"></i>
     </span> -->
-                </div>
-            </div>
+  </div>
+</div>
 
         </div>
     </footer>
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+   
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <!-- <script>
