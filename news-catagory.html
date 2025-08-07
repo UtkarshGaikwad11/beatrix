@@ -16,18 +16,37 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div style="margin-right: 70px;">
-                <img decoding="async" fetchpriority="high" class="img-fluid"
-                    src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/ig:avif/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/logo.svg"
-                    alt="" data-opt-lazy-loaded="false">
+            <div>
+                <a href="/">
+                    <img decoding="async" fetchpriority="high" class="img-fluid img-logo"
+                        src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/ig:avif/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/logo.svg"
+                        alt="Home" data-opt-lazy-loaded="false">
+                </a>
             </div>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="d-none d-md-flex" id="">
-                <ul class="navbar-nav me-auto">
+            <!-- Navbar small Screen Left Side -->
+            <div class="d-flex">
+                <div class=" d-flex d-lg-none">
+                    <button class="btn nav-search" id="searchToggle">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                    <button class="btn theme-toggle" style="padding: 0;">
+                        <i class="fas fa-sun theme-icon"></i>
+                    </button>
+
+                    </span>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+
+            <!-- Navbar Large Screen Left Side -->
+            <div class="d-none d-lg-flex" id="">
+                <ul class="navbar-nav " style="margin-right: 100px;">
                     <li class="nav-item" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Home</a>
                     </li>
@@ -55,71 +74,77 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
+            </div>
 
-                <div class="navbar-nav d-none d-md-flex">
-                    <button class="btn nav-search ">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <button class="btn theme-toggle me-2" id="themeToggle">
-                        <i class="fas fa-moon" id="themeIcon"></i>
-                    </button>
-                    <button class="btn btn-subscribe me-2">
-                        <i class="fas fa-play me-2"></i>Subscribe
-                    </button>
-                    <span class=" ms-3 nav-bar" style="cursor: pointer;">
-                        <i class="fas fa-bars"></i>
-                    </span>
+            <div class="navbar-nav d-none d-lg-flex">
+                <div class="search-box">
+                    <input type="text" placeholder="Search..." />
+                    <i class="fa fa-search"></i>
                 </div>
+
+                <button class="btn theme-toggle me-2">
+                    <i class="fas fa-sun theme-icon"></i>
+                </button>
+
+                <button class="btn btn-subscribe me-2">
+                    <i class="fas fa-play me-2"></i>Subscribe
+                </button>
+                <span class=" ms-3 nav-bar" style="cursor: pointer;">
+                    <i class="fas fa-bars"></i>
+                </span>
             </div>
         </div>
     </nav>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item" style="padding-right: 15px;">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item" style="padding-right: 15px;">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item" style="padding-right: 15px;">
-                        <a class="nav-link" href="#">Fashion</a>
-                    </li>
-                    <li class="nav-item" style="padding-right: 15px;">
-                        <a class="nav-link" href="#">Lifestyle</a>
-                    </li>
-                    <li class="nav-item dropdown" style="padding-right: 15px;">
-                        <a class="nav-link" href="#">Pages</a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a class="dropdown-item" href="#" style=" border-top: 1px solid #3cffd0;">Category
-                                    Page</a></li>
-                            <li><a class="dropdown-item" href="#">Blog Page</a></li>
-                            <li><a class="dropdown-item" href="#">Post Single</a></li>
-                            <li><a class="dropdown-item" href="#">Post Video</a></li>
-                            <li><a class="dropdown-item" href="#">Contact Page</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item" style="padding-right: 15px;">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
+    <!-- Dropdown fa-bars item Small Scrren -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+            <li class="nav-item" style="padding-right: 15px;">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item" style="padding-right: 15px;">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item" style="padding-right: 15px;">
+                <a class="nav-link" href="#">Fashion</a>
+            </li>
+            <li class="nav-item" style="padding-right: 15px;">
+                <a class="nav-link" href="#">Lifestyle</a>
+            </li>
+            <li class="nav-item dropdown" style="padding-right: 15px;">
+                <a class="nav-link" href="#">Pages</a>
+                <ul class="dropdown-menu custom-dropdown">
+                    <li><a class="dropdown-item" href="#" style=" border-top: 1px solid #3cffd0;">Category
+                            Page</a></li>
+                    <li><a class="dropdown-item" href="#">Blog Page</a></li>
+                    <li><a class="dropdown-item" href="#">Post Single</a></li>
+                    <li><a class="dropdown-item" href="#">Post Video</a></li>
+                    <li><a class="dropdown-item" href="#">Contact Page</a></li>
                 </ul>
+            </li>
+            <li class="nav-item" style="padding-right: 15px;">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+    </div>
 
-                <div class="navbar-nav d-none d-md-flex">
-                    <button class="btn nav-search ">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                    <button class="btn theme-toggle me-2" id="themeToggle">
-                        <i class="fas fa-moon" id="themeIcon"></i>
-                    </button>
-                    <button class="btn btn-subscribe me-2">
-                        <i class="fas fa-play me-2"></i>Subscribe
-                    </button>
-                    <span class=" ms-3 nav-bar" style="cursor: pointer;">
-                        <i class="fas fa-bars"></i>
-                    </span>
-                </div>
+    <!-- Search Navbar (Hidden by default) -->
+    <div class="search-navbar" id="searchNavbar">
+        <button class="close-btn-nav" id="closeSearch">
+            <i class="fas fa-times"></i>
+        </button>
+
+        <div class="search-container">
+            <div style="position: relative; width: 100%;">
+                <input type="text" class="search-input" placeholder="Search here..." id="searchInput">
+                <button class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
+        </div>
+    </div>
 
+    <!-- Right Side Menu -->
     <div id="rightSideMenu" class="right-side-menu ">
         <div class="menu-header d-flex justify-content-between align-items-center " style="margin-bottom: 35px;">
             <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/ig:avif/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/logo.svg"
@@ -234,14 +259,15 @@
                     </div>
                 </div>
 
-                 <div class="card mb-4 border-0 ">
+                <div class="card mb-4 border-0 ">
                     <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/laughter-in-the-sun-scaled.webp"
                         alt="Featured" class="article-image1">
 
                     <div class="card-body">
                         <h3 class="article-title">Maddie Ziegler Takes a Lie Detector Test</h3>
                         <p class="article-desc">
-                           Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez from expanding
+                            Struggling to sell one multi-million dollar home currently on the market won’t stop actress
+                            and singer Jennifer Lopez from expanding
                         </p>
                         <div class="article-meta">
                             <span>BY <span class="author">KRISTIN</span> </span>
@@ -250,14 +276,15 @@
                     </div>
                 </div>
 
-                 <div class="card mb-4 border-0 ">
+                <div class="card mb-4 border-0 ">
                     <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/model-glass.jpg"
                         alt="Featured" class="article-image1">
 
                     <div class="card-body">
                         <h3 class="article-title">Education vs. Fuel: a lose-lose situation</h3>
                         <p class="article-desc">
-                          Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez from expanding
+                            Struggling to sell one multi-million dollar home currently on the market won’t stop actress
+                            and singer Jennifer Lopez from expanding
                         </p>
                         <div class="article-meta">
                             <span>BY <span class="author">KRISTIN</span> </span>
@@ -273,7 +300,8 @@
                     <div class="card-body">
                         <h3 class="article-title">Rachel Maddow Will Go Mondays Only On MSNBC</h3>
                         <p class="article-desc">
-                          Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez from expanding
+                            Struggling to sell one multi-million dollar home currently on the market won’t stop actress
+                            and singer Jennifer Lopez from expanding
                         </p>
                         <div class="article-meta">
                             <span>BY <span class="author">KRISTIN</span> </span>
@@ -281,7 +309,7 @@
                         </div>
                     </div>
                 </div>
-              
+
                 <div class="card mb-4 border-0 ">
                     <img src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/office.webp"
                         alt="Featured" class="article-image1">
@@ -289,7 +317,8 @@
                     <div class="card-body">
                         <h3 class="article-title">Introduction of Design Trends</h3>
                         <p class="article-desc">
-                          Struggling to sell one multi-million dollar home currently on the market won’t stop actress and singer Jennifer Lopez from expanding
+                            Struggling to sell one multi-million dollar home currently on the market won’t stop actress
+                            and singer Jennifer Lopez from expanding
                         </p>
                         <div class="article-meta">
                             <span>BY <span class="author">KRISTIN</span> </span>
@@ -441,56 +470,109 @@
             </div>
 
             <!-- Bottom Bar -->
-        <div class="row bottom-bar text-center text-md-start align-items-center">
-  <div class="col-12 col-md-6 mb-2 mb-md-0">
-    <div>Copyright © Beatrix 2023. All rights reserved</div>
-  </div>
-  <div class="col-12 col-md-6 text-center text-md-end bottom-links">
-    <a href="#">Privacy Policy</a>
-    <a href="#">Terms of Use</a>
-    <!-- <span class="back-to-top ms-3" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+            <div class="row bottom-bar text-center text-md-start align-items-center">
+                <div class="col-12 col-md-6 mb-2 mb-md-0">
+                    <div>Copyright © Beatrix 2023. All rights reserved</div>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <!-- <span class="back-to-top ms-3" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
       <i class="fa-solid fa-chevron-up"></i>
     </span> -->
-  </div>
-</div>
+                </div>
+            </div>
 
         </div>
     </footer>
 
 
-   
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
-        // Theme Toggle Functionality
-        const themeToggle = document.getElementById('themeToggle');
-        const themeIcon = document.getElementById('themeIcon');
+        const themeToggles = document.querySelectorAll('.theme-toggle');
+        const themeIcons = document.querySelectorAll('.theme-icon');
         const body = document.body;
 
-        themeToggle.addEventListener('click', function () {
-            if (body.classList.contains('dark-mode')) {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
-                themeIcon.classList.remove('fa-moon');
-                themeIcon.classList.add('fa-sun');
-            } else {
-                body.classList.remove('light-mode');
-                body.classList.add('dark-mode');
-                themeIcon.classList.remove('fa-sun');
-                themeIcon.classList.add('fa-moon');
+        themeToggles.forEach(toggle => {
+            toggle.addEventListener('click', function () {
+                const isDark = body.classList.contains('dark-mode');
+
+                body.classList.toggle('dark-mode', !isDark);
+                body.classList.toggle('light-mode', isDark);
+
+                themeIcons.forEach(icon => {
+                    icon.classList.toggle('fa-moon', isDark);
+                    icon.classList.toggle('fa-sun', !isDark);
+                });
+            });
+        });
+    </script>
+
+
+    <script>
+        const menu = document.getElementById('rightSideMenu');
+
+        document.querySelector('.nav-bar').addEventListener('click', () => {
+            // Reset state (optional, but safe)
+            menu.classList.remove('show');
+
+            // Force reflow
+            void menu.offsetWidth;
+
+            // Now apply transition-triggering class
+            menu.classList.add('show');
+        });
+
+        document.getElementById('closeRightMenu').addEventListener('click', () => {
+            menu.classList.remove('show');
+        });
+    </script>
+
+    <!-- Search section -->
+    <script>
+        const searchToggleLarge = document.getElementById('searchToggleLarge');
+        const searchInputLarge = document.getElementById('searchInputLarge');
+
+        searchToggleLarge.addEventListener('click', () => {
+            searchInputLarge.classList.toggle('show');
+            if (searchInputLarge.classList.contains('show')) {
+                searchInputLarge.focus();
             }
         });
     </script>
 
-    <script>
-        document.querySelector('.nav-bar').addEventListener('click', () => {
-            document.getElementById('rightSideMenu').classList.add('show');
-        });
 
-        document.getElementById('closeRightMenu').addEventListener('click', () => {
-            document.getElementById('rightSideMenu').classList.remove('show');
+    <script>
+        // Get elements
+        const searchToggle = document.getElementById('searchToggle');
+        const searchToggleDesktop = document.getElementById('searchToggleDesktop');
+        const searchNavbar = document.getElementById('searchNavbar');
+        const closeSearch = document.getElementById('closeSearch');
+        const searchInput = document.getElementById('searchInput');
+
+        // Open search navbar
+        function openSearch() {
+            searchNavbar.classList.add('active');
+            setTimeout(() => {
+                searchInput.focus();
+            }, 400);
+        }
+
+        // Close search navbar
+        function closeSearchNavbar() {
+            searchNavbar.classList.remove('active');
+        }
+
+        // Open search events
+        searchToggle?.addEventListener('click', openSearch);
+        searchToggleDesktop?.addEventListener('click', openSearch);
+
+        // ONLY close button event - nothing else
+        document.getElementById('closeSearch').addEventListener('click', function () {
+            document.getElementById('searchNavbar').classList.remove('active');
         });
     </script>
-
 
 </body>
