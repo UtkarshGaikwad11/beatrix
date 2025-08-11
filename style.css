@@ -63,6 +63,9 @@ body.dark-mode {
   color: var(--dark-text);
 }
 
+
+
+
 body.light-mode h3,
 h5,
 h4,
@@ -74,7 +77,8 @@ body.light-mode h5 {
   color: #000000;
 }
 
-body.light-mode .todays-pick-item h5,
+
+body.light-mode .todays-pick-item, h5,
 h3 {
   color: #000000;
 }
@@ -89,6 +93,8 @@ h2,
 h5 {
   color: #ffffff;
 }
+
+
 
 body.light-mode .date {
   color: #272727;
@@ -165,7 +171,7 @@ body.dark-mode .nav-bar:hover {
 body.dark-mode .section-title {
   color: var(--dark-text);
   font-family: var(--primary-font);
-  background-color: var(--dark-bg);
+  /* background-color: var(--dark-bg); */
 }
 
 body.dark-mode .pick-category {
@@ -269,6 +275,10 @@ body.light-mode .pick-item {
   /* Optional: colored top border */
   min-width: 200px;
   z-index: 1000;
+}
+
+.custom-dropdown > li:first-child {
+  border-top: 1px solid #3cffd0;
 }
 
 /* Optional: dropdown items spacing */
@@ -2234,4 +2244,127 @@ body.light-mode .category-title {
 
 body.light-mode .breadcrumb-links li {
   color: #585858;
+}
+
+
+
+
+/* Small Screen Menu Bar */
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  padding: 20px;
+  z-index: 1001;
+  position: relative;
+}
+
+.overlay-menu {
+  margin-top: 76px;
+  position: absolute; /* So it scrolls with page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 9999;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  height: 0;
+
+}
+
+/* Slide Down Animation */
+.overlay-menu.open {
+  animation: slideDown 0.3s ease forwards;
+}
+
+/* Slide Up Animation */
+.overlay-menu.closing {
+  animation: slideUp 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  100% {
+    height: auto; /* your desired open height */
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    height: 300px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+.overlay-nav {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.overlay-nav li {
+  border-bottom: 1px solid #222;
+  font-size: 15px;
+  /* padding: 10px 0 10px 20px; */
+}
+
+/* Remove border for last item */
+.overlay-nav li:last-child {
+  border-bottom: none;
+}
+
+.overlay-nav li a {
+  display: block;
+  padding:0.8rem 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* Submenu is hidden by default */
+.submenu {
+  display: none;
+  /* padding-left: 1.5rem; */
+  background: #000000;
+
+}
+
+/* Arrow style */
+.has-submenu .arrow {
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate arrow when active */
+.has-submenu.open .arrow {
+  transform: rotate(90deg);
+}
+
+/* Show submenu when parent has `open` class */
+.has-submenu.open .submenu {
+  display: block;
+}
+
+.overlay-nav,
+.submenu {
+  list-style: none;  
+  padding: 0;
+  margin: 0;
+  
+}
+
+.submenu li a{
+  padding-left: 1.5rem;
+  padding: 0.5rem 2rem;
+  color: #cacaca;
 }
