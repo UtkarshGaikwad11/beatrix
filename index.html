@@ -49,8 +49,8 @@
                     </li>
                     <li class="nav-item dropdown" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Features</a>
-                         <ul class="dropdown-menu custom-dropdown">
-                            <li><a class="dropdown-item" href="#" >Category
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="#">Category
                                     Page</a></li>
                             <li><a class="dropdown-item" href="#">Blog Page</a></li>
                             <li><a class="dropdown-item" href="#">Post Single</a></li>
@@ -66,7 +66,7 @@
                     </li>
                     <li class="nav-item dropdown" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Shop</a>
-                       
+
                     </li>
                     <li class="nav-item" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Contact</a>
@@ -518,7 +518,7 @@
                 <div class=" col-12 col-lg-8">
 
                     <!-- Article 1 -->
-                    <div class="editor-item d-flex flex-column flex-lg-row justify-content-between  gap-3">
+                    <div class="editor-item d-flex flex-column flex-md-row justify-content-between  gap-3">
                         <div class="order-2 order-lg-1" style="width: 100%; max-width: 425px;">
                             <h3>Etsy Sellers Are Here to Help You Advertise</h3>
                             <p>Struggling to sell one multi-million dollar home currently on the market won’t stop
@@ -540,7 +540,7 @@
                     </div>
 
                     <!-- Article 2 -->
-                    <div class="editor-item d-flex flex-column flex-lg-row justify-content-between  gap-3 mt-4">
+                    <div class="editor-item d-flex flex-column flex-md-row justify-content-between  gap-3 mt-4">
                         <div class="order-2 order-lg-1" style="width: 100%; max-width: 425px;">
                             <h3>You have to fight to reach your dream</h3>
                             <p>Struggling to sell one multi-million dollar home currently on the market won’t stop
@@ -560,7 +560,7 @@
                     </div>
 
                     <!-- Article 3 -->
-                    <div class="editor-item d-flex flex-column flex-lg-row justify-content-between  gap-3 mt-4">
+                    <div class="editor-item d-flex flex-column flex-md-row justify-content-between  gap-3 mt-4">
                         <div class="order-2 order-lg-1" style="width: 100%; max-width: 425px;">
                             <h3>Beauty products that still beloved today</h3>
                             <p>Struggling to sell one multi-million dollar home currently on the market won’t stop
@@ -1134,25 +1134,39 @@
         const themeIcons = document.querySelectorAll('.theme-icon');
         const body = document.body;
 
+        // --- Apply saved theme on page load ---
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.toggle('dark-mode', savedTheme === 'dark');
+            body.classList.toggle('light-mode', savedTheme === 'light');
+
+            themeIcons.forEach(icon => {
+                icon.classList.toggle('fa-sun', savedTheme === 'light');
+                icon.classList.toggle('fa-moon', savedTheme === 'dark');
+            });
+        }
+
+        // --- Handle theme toggle ---
         themeToggles.forEach(toggle => {
             toggle.addEventListener('click', function () {
                 const isDark = body.classList.contains('dark-mode');
+                const newTheme = isDark ? 'light' : 'dark';
 
-                body.classList.toggle('dark-mode', !isDark);
-                body.classList.toggle('light-mode', isDark);
+                // Toggle classes
+                body.classList.toggle('dark-mode', newTheme === 'dark');
+                body.classList.toggle('light-mode', newTheme === 'light');
 
+                // Toggle icons
                 themeIcons.forEach(icon => {
-                    icon.classList.toggle('fa-sun', isDark);
-                    icon.classList.toggle('fa-moon', !isDark);
+                    icon.classList.toggle('fa-sun', newTheme === 'light');
+                    icon.classList.toggle('fa-moon', newTheme === 'dark');
                 });
+
+                // Save theme to localStorage
+                localStorage.setItem('theme', newTheme);
             });
         });
     </script>
-
-
-
-
-
 
     <script>
         const menu = document.getElementById('rightSideMenu');

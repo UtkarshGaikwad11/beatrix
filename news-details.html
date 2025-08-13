@@ -16,12 +16,10 @@
     <!-- Header -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
-            <div>
-                <a href="/">
-                    <img decoding="async" fetchpriority="high" class="img-fluid img-logo"
-                        src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/ig:avif/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/logo.svg"
-                        alt="Home" data-opt-lazy-loaded="false">
-                </a>
+            <div style="">
+                <img decoding="async" fetchpriority="high" class="img-fluid img-logo"
+                    src="https://mlbrcemi40a6.i.optimole.com/cb:Zyxq.56bae/w:auto/h:auto/q:mauto/ig:avif/f:best/https://gossip-themes.com/beatrix/wp-content/uploads/2023/01/logo.svg"
+                    alt="" data-opt-lazy-loaded="false">
             </div>
 
             <!-- Navbar small Screen Left Side -->
@@ -31,13 +29,13 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                     <button class="btn theme-toggle" style="padding: 0;">
-                        <i class="fas fa-moon theme-icon"></i>
+                        <i class="fas fa-sun theme-icon"></i>
                     </button>
 
                     </span>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <button class="navbar-toggler" id="menuToggle">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -49,8 +47,16 @@
                     <li class="nav-item" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class="nav-item" style="padding-right: 15px;">
+                    <li class="nav-item dropdown" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Features</a>
+                        <ul class="dropdown-menu custom-dropdown">
+                            <li><a class="dropdown-item" href="#">Category
+                                    Page</a></li>
+                            <li><a class="dropdown-item" href="#">Blog Page</a></li>
+                            <li><a class="dropdown-item" href="#">Post Single</a></li>
+                            <li><a class="dropdown-item" href="#">Post Video</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Page</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Fashion</a>
@@ -59,15 +65,8 @@
                         <a class="nav-link" href="#">Lifestyle</a>
                     </li>
                     <li class="nav-item dropdown" style="padding-right: 15px;">
-                        <a class="nav-link" href="#">Pages</a>
-                        <ul class="dropdown-menu custom-dropdown">
-                            <li><a class="dropdown-item" href="#" style=" border-top: 1px solid #3cffd0;">Category
-                                    Page</a></li>
-                            <li><a class="dropdown-item" href="#">Blog Page</a></li>
-                            <li><a class="dropdown-item" href="#">Post Single</a></li>
-                            <li><a class="dropdown-item" href="#">Post Video</a></li>
-                            <li><a class="dropdown-item" href="#">Contact Page</a></li>
-                        </ul>
+                        <a class="nav-link" href="#">Shop</a>
+
                     </li>
                     <li class="nav-item" style="padding-right: 15px;">
                         <a class="nav-link" href="#">Contact</a>
@@ -80,6 +79,7 @@
                     <input type="text" placeholder="Search..." />
                     <i class="fa fa-search"></i>
                 </div>
+
 
 
                 <button class="btn theme-toggle me-2">
@@ -97,34 +97,23 @@
     </nav>
 
     <!-- Dropdown fa-bars item Small Scrren -->
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto">
-            <li class="nav-item" style="padding-right: 15px;">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item" style="padding-right: 15px;">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item" style="padding-right: 15px;">
-                <a class="nav-link" href="#">Fashion</a>
-            </li>
-            <li class="nav-item" style="padding-right: 15px;">
-                <a class="nav-link" href="#">Lifestyle</a>
-            </li>
-            <li class="nav-item dropdown" style="padding-right: 15px;">
-                <a class="nav-link" href="#">Pages</a>
-                <ul class="dropdown-menu custom-dropdown">
-                    <li><a class="dropdown-item" href="#" style=" border-top: 1px solid #3cffd0;">Category
-                            Page</a></li>
-                    <li><a class="dropdown-item" href="#">Blog Page</a></li>
-                    <li><a class="dropdown-item" href="#">Post Single</a></li>
-                    <li><a class="dropdown-item" href="#">Post Video</a></li>
-                    <li><a class="dropdown-item" href="#">Contact Page</a></li>
+    <div id="overlayMenu" class="overlay-menu">
+        <ul class="overlay-nav">
+            <li><a href="#">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Features <span class="arrow">›</span></a>
+                <ul class="submenu">
+                    <li><a href="#">Category Page</a></li>
+                    <li><a href="#">Blog Page</a></li>
+                    <li><a href="#">Post Single</a></li>
+                    <li><a href="#">Post Video</a></li>
+                    <li><a href="#">Contact Page</a></li>
                 </ul>
             </li>
-            <li class="nav-item" style="padding-right: 15px;">
-                <a class="nav-link" href="#">Contact</a>
-            </li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Lifestyle</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </div>
 
@@ -583,9 +572,7 @@
 
 
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 
@@ -594,25 +581,39 @@
         const themeIcons = document.querySelectorAll('.theme-icon');
         const body = document.body;
 
+        // --- Apply saved theme on page load ---
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            body.classList.toggle('dark-mode', savedTheme === 'dark');
+            body.classList.toggle('light-mode', savedTheme === 'light');
+
+            themeIcons.forEach(icon => {
+                icon.classList.toggle('fa-sun', savedTheme === 'light');
+                icon.classList.toggle('fa-moon', savedTheme === 'dark');
+            });
+        }
+
+        // --- Handle theme toggle ---
         themeToggles.forEach(toggle => {
             toggle.addEventListener('click', function () {
                 const isDark = body.classList.contains('dark-mode');
+                const newTheme = isDark ? 'light' : 'dark';
 
-                body.classList.toggle('dark-mode', !isDark);
-                body.classList.toggle('light-mode', isDark);
+                // Toggle classes
+                body.classList.toggle('dark-mode', newTheme === 'dark');
+                body.classList.toggle('light-mode', newTheme === 'light');
 
+                // Toggle icons
                 themeIcons.forEach(icon => {
-                    icon.classList.toggle('fa-sun', isDark);
-                    icon.classList.toggle('fa-moon', !isDark);
+                    icon.classList.toggle('fa-sun', newTheme === 'light');
+                    icon.classList.toggle('fa-moon', newTheme === 'dark');
                 });
+
+                // Save theme to localStorage
+                localStorage.setItem('theme', newTheme);
             });
         });
     </script>
-
-
-
-
-
 
     <script>
         const menu = document.getElementById('rightSideMenu');
@@ -675,6 +676,40 @@
         // ONLY close button event - nothing else
         document.getElementById('closeSearch').addEventListener('click', function () {
             document.getElementById('searchNavbar').classList.remove('active');
+        });
+    </script>
+
+
+    <script>
+        const toggle = document.getElementById("menuToggle");
+        const menubar = document.getElementById("overlayMenu");
+
+        toggle.addEventListener("click", () => {
+            if (menubar.classList.contains("open")) {
+                // Start closing animation
+                menubar.classList.remove("open");
+                menubar.classList.add("closing");
+
+                // Wait for animation to finish, then clean up
+                menubar.addEventListener("animationend", () => {
+                    menubar.classList.remove("closing");
+                    menubar.style.visibility = "hidden";
+                }, { once: true });
+            } else {
+                // Start opening animation
+                menubar.style.visibility = "visible";
+                menubar.classList.add("open");
+            }
+        });
+    </script>
+
+    <script>
+        document.querySelectorAll(".has-submenu > a").forEach(item => {
+            item.addEventListener("click", (e) => {
+                e.preventDefault(); // Prevent link behavior
+                const parentLi = item.parentElement;
+                parentLi.classList.toggle("open");
+            });
         });
     </script>
 

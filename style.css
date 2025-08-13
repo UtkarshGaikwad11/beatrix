@@ -1173,16 +1173,22 @@ p {
 @media (max-width: 767px) {
   .image-wrapper-new {
     height: 350px;
+   
   }
 
   .editor-item h3 {
     font-size: 24px;
+  }
+
+  .editor-item{
+    width: 100%;
   }
 }
 
 @media (max-width: 1024px) {
   .image-wrapper-new {
     height: 230px;
+    
   }
 
   .editor-item h3 {
@@ -2277,12 +2283,12 @@ body.light-mode .breadcrumb-links li {
 
 /* Slide Down Animation */
 .overlay-menu.open {
-  animation: slideDown 0.3s ease forwards;
+  animation: slideDown 0.3s ease-in-out forwards;
 }
 
 /* Slide Up Animation */
 .overlay-menu.closing {
-  animation: slideUp 0.3s ease forwards;
+  animation: slideUp 0.3s ease-in-out forwards;
 }
 
 @keyframes slideDown {
@@ -2291,7 +2297,7 @@ body.light-mode .breadcrumb-links li {
     opacity: 0;
   }
   100% {
-    height: auto; /* your desired open height */
+    height: 300px; /* your desired open height */
     opacity: 1;
   }
 }
